@@ -1,0 +1,172 @@
+#lecture-container{
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#lecture-container h2{
+    position: absolute;
+    left: 205px;
+}
+#lecture-container #parent-lectureDivs{
+    width: 75%;
+    background: var(--secondary-color);
+}
+#parent-lectureDivs{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    margin-top: 50px;
+}
+.lectureDivs{
+    display: flex;
+    align-items: center;
+    background: var(--primary-color);
+    display: block;
+    width: 65%;
+    font-size: 0.9rem;
+    height: 40px;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    color: rgb(205, 203, 203);
+    box-shadow: 0 4px 8px 0 rgba(237, 233, 233, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    cursor: pointer;
+}
+.lectureDivs i{
+    color: rgb(153, 141, 141);
+    top: -30px;
+    position: relative;
+    right: -80%;
+}
+.lectureDivs:hover i{
+    color: rgb(255, 255, 255);
+}
+.lectureDivs:hover{
+    background: black;
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgba(255, 255, 255, 0.475);
+}
+.lectureLink{
+    width: 70%;
+    border: 0.1px solid rgba(255, 255, 255, 0.492);
+    margin: 10px;
+}
+.lectureLink ul li{
+    list-style: none;
+    padding: 10px;
+}
+.lectureLink ul li a{
+    color: rgb(0, 110, 255);
+    list-style: none;
+    text-decoration: none;
+}
+.lectureLink2{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    border: 1px solid rgba(255, 255, 255, 0.471);
+    width: 70%;
+    display: grid;
+    grid-template-columns: 250px 250px;
+}
+.lectureLink2 div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--primary-color);
+    border: 1px solid rgba(255, 255, 255, 0.471);
+    height: 200px;
+    text-align: center;
+    width: 220px;
+    margin: 20px;
+}
+
+#comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+}
+#comment button{
+border-top-left-radius:0px;
+border-bottom-left-radius:0px;
+border-top-right-radius:20px;
+border-bottom-right-radius:20px;
+height:35px; 
+background-color: var(--secondary-color);
+border:  1px solid rgba(255, 255, 255, 0.471);
+border-left:1px;
+width:100px;
+color: aliceblue;
+font-size: 2rem;
+font-family: Arial, Helvetica, sans-serif;
+cursor: pointer;
+}
+.lectureLink2 div a{
+    color: rgb(0, 110, 255);
+    text-decoration: none;
+}
+#comment input{
+    background-color: var(--secondary-color);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 33px;
+    width: 100%;
+    border:  1px solid rgba(255, 255, 255, 0.471);
+    color: white;
+    padding-left: 10px;
+}
+
+@media (max-width: 1300px){
+    #lecture-container #parent-lectureDivs{
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .lectureDivs{
+        width: 500px;
+    }
+    .lectureDivs i{
+        position: relative;
+        right: -450px;
+    }
+    #lecture-container h2{
+        position: relative;
+        left: -30px;
+    }
+    
+}
+@media (max-width: 600px){
+    #lecture-container #parent-lectureDivs{
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .lectureDivs{
+        width: 300px;
+    }
+    .lectureDivs i{
+        position: relative;
+        right: -280px;
+    }
+    #lecture-container h2{
+        position: absolute;
+        left: 70px;
+    }
+    .lectureLink2{
+      display: flex;
+      flex-direction: column;
+    }
+}
+@media (max-width: 740px){
+    .lectureLink2{
+        display: flex;
+        flex-direction: column;
+      }
+}
